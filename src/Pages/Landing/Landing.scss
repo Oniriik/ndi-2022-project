@@ -1,15 +1,47 @@
+@import 'Styles/variables.scss';
+
 .landing{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
     height: 100vh;
-    background-color: #282c34;
-    color: white;
-    
-    font-size: calc(10px + 2vmin);
+    background-image: url('./Assets/LandingBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 5rem;
+    padding-top: 5rem;
+
+    .sex-info-box{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      h1{
+        font-size: 55px;
+        font-weight: 600;
+        color: $lavender;
+        text-shadow: $titleShadow;
+        font-family: "Playfair Display";
+      }
+      p{
+        font-size: 26px;
+        font-weight: 500;
+        font-family: "Cormorant";
+        width: 50%;
+        letter-spacing: -1px;
+      }
+    }
+    .quiz-bubble{
+      display:flex;
+      position: absolute;
+      right: 0;
+      img{
+        width: 800px;
+        height: 900px;  
+
+      }
+    }
+    .quiz-bubble:hover{
+      cursor: pointer;
+    }
   }
   
   
