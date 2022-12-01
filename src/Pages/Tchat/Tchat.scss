@@ -3,6 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('./Assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
     .username-select{
         width: 50%;
         height: 400px;
