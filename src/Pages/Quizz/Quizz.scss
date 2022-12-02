@@ -1,7 +1,13 @@
 .quizz{
     display: flex;
-    background-image: url('./Assets/QuizzBackground.png');
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    align-items: center;
+    background-image: url('./Assets/background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
 }

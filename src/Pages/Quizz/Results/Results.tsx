@@ -20,7 +20,9 @@ ChartJS.register(
     Legend
 );
 
-export const Results = () => {
+export const Results = ({ score }) => {
+    console.log(score);
+    data.datasets[0].data=score;
     return (
         <div className='results'>
             <div className='header'>Vos résultats à notre quiz :</div>

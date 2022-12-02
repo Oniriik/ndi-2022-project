@@ -7,7 +7,7 @@ export const data = {
     ],
     datasets: [{
         label: 'Quiz Dataset',
-        data: [3, 4, 2, 3],
+        data: [0, 0, 0, 0],
         fill: true,
         backgroundColor: 'rgba(254, 215, 255, 0.2)', // pastel
         borderColor: 'rgba(146, 51, 240, 1)', // lavender

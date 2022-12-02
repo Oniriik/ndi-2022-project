@@ -12,12 +12,12 @@
     border-radius: 25px;
 
     padding: 30px;
-    margin-top: 30px;
+
 
     .header{
         display: flex;
         flex-direction: column;
-
+        margin-bottom: 10px;
         .question{
             font-family: 'Inter';
             font-weight: 600;
