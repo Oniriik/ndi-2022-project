@@ -10,10 +10,6 @@ export const Tchat = ()=>{
     const [usernameInput,setUsername]= useState('');
     const [message ,setMessage]= useState('');
     const [messages, setMessages] = useState([]);
-    socket.on('connect', () => {
-        console.log('connected');
-    });
-    
     socket.on('receive-message',(message) => {
         setMessages([...messages,message]);
         setMessage('');
