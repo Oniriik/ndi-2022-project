@@ -3,7 +3,8 @@
 body,
 html,
 #root {
-    height: calc(100vh - 100px);
+    height: fit-content; 
+    overflow-x: hidden;
 }
 h1{
     font-size: 55px;
