@@ -26,7 +26,7 @@ export const Landing = () => {
                     <img className='logos' src={require('./Assets/ndilogo2.png')} alt="ndi_logo"/>
                 </div>
             </div>
-            <a href='./Quizz'>
+            <a href='./quiz'>
                 <img className='quiz-bubble' src={require('./Assets/QuizOrb.png')} alt="QuizzBulle"/>
             </a>
             <img className='arrow' src={require('./Assets/down-arrow.png')} alt="Arrow"/>
