@@ -1,3 +1,3 @@
 import { io } from 'socket.io-client';
 
-export const socket = io('https://websocket-ndi-2022.joaofernandes27.repl.co/');
+export const socket = io('https://websocket-chat-api-1.oniriik.repl.co');
