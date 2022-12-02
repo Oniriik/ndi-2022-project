@@ -1,7 +1,10 @@
 import './Quizz.scss';
+import { Results } from './Results';
 
-export const Quizz = ()=> {
+export const Quizz = () => {
     return(
-        <span>quiz</span>
+        <div className='quizz'>
+            <Results/>
+        </div>
     );
 };
