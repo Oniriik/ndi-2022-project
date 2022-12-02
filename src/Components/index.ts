@@ -1,1 +1,1 @@
-export * from './SpinLogo';
+export * from './NavBar';

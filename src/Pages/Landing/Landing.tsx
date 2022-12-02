@@ -13,9 +13,7 @@ export const Landing = () => {
                       précédemment avec d’autres utilisateurs, ou avec notre 
                       intelligence artificielle (OpenIA). </p>
             </div>
-            <div className='quiz-bubble'>
-                <img src={require('./Assets/QuizOrb.png')} alt="QuizzBulle"/>
-            </div>
+            <img className='quiz-bubble' src={require('./Assets/QuizOrb.png')} alt="QuizzBulle"/>
         </div>
     );
 };
