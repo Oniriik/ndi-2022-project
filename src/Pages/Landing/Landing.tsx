@@ -17,14 +17,18 @@ export const Landing = () => {
                       intelligence artificielle (OpenIA). </p>
                 <div className='credits'>
                     <p>Ce site web a été conçu dans le cadre du défi principal
-                        de la nuit de l'info 2022, dans un but de sensibilisation à l'éducation sexuelle.
+                        de la nuit de l'info 2022, proposé par Sida Info Service, dans un but de sensibilisation à l'éducation sexuelle.
                     </p>
-                    <img className='logos' src={require('./Assets/SIS.png')} alt="sislogo"/>
+                    <a href='https://www.sida-info-service.org/'>
+                        <img className='logos' src={require('./Assets/SIS.png')} alt="sislogo"/>
+                    </a>
                     <img className='X' src={require('./Assets/X.png')} alt="X"/>
                     <img className='logos' src={require('./Assets/ndilogo2.png')} alt="ndi_logo"/>
                 </div>
             </div>
-            <img className='quiz-bubble' src={require('./Assets/QuizOrb.png')} alt="QuizzBulle"/>
+            <a href='https://sexeinfo.netlify.app/quiz'>
+                <img className='quiz-bubble' src={require('./Assets/QuizOrb.png')} alt="QuizzBulle"/>
+            </a>
             <img className='arrow' src={require('./Assets/down-arrow.png')} alt="Arrow"/>
             <div className='facts'>
                 <motion.div 
