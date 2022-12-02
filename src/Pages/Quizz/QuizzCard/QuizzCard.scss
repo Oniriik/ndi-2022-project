@@ -1,0 +1,129 @@
+@import 'Styles/variables.scss';
+
+.quizzcard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 70vh;
+    max-width: 800px;
+
+    background-color: $pure;
+    border-radius: 25px;
+
+    padding: 30px;
+    margin-top: 30px;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+
+        .question{
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 30px;
+            color: $velvel;
+            margin-bottom: 5px;
+        }
+
+        .category {
+            background-color: rgba(255, 42, 183, 0.3);
+            padding: 10px;
+            margin-top: 10px;;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+        }
+    }
+
+    .question-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+
+        .answers-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+        
+            .answer:hover {
+                border: solid darken($pure, 15) 3px;
+                cursor: pointer;
+            }
+
+            .answer {
+                text-transform: capitalize;
+                padding: 20px;
+                border-radius: 20px;
+
+                border: solid darken($pure, 10) 3px;
+
+                box-shadow: $titleShadow;
+
+                &.valid {
+                    border: solid $valid 3px;
+                }
+
+                &.wrong {
+                    border: solid $error 3px;
+                }
+            }
+
+            .answer:active {
+                background-color: darken($pure, 10  );
+            }
+        }
+
+        .caption-container {
+            font-family: 'Cormorant';
+            font-weight: 500;
+            font-size: 21px;
+            color: $velvel;
+            letter-spacing: -1px;
+            padding: 20px;
+
+            .caption {
+                margin-bottom: 10px;
+            }
+
+            a {
+                color: $lavender;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .question-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-family: 'Inter';
+
+        .index {
+            color: $velvel;
+            font-size: 22px;
+        }
+
+        button {
+            background-color: $lavender;
+            color: $pure;
+            padding: 20px;
+            border-radius: 15px;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        button:hover {
+            background-color: darken($lavender, 5);
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: darken($lavender, 10);
+        }
+    }
+}
