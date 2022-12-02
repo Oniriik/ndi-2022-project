@@ -1,15 +1,33 @@
+@import 'Styles/variables.scss';
+
 .landing{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    height: 100vh;
-    background-color: #282c34;
-    color: white;
-    
-    font-size: calc(10px + 2vmin);
+    background-image: url('./Assets/LandingBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 4em;
+    .sex-info-box{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 50%;
+     
+    }
+    .quiz-bubble{
+      top: 3em;
+      position: absolute;
+      right: 0;
+      overflow: hidden;
+      width: 750px;
+      height: auto;
+      transition-duration: 0.3s;
+      &:hover{
+        cursor: pointer;
+        filter: brightness(1.3);
+      }
+    }
   }
   
   
